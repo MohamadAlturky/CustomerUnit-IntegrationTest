@@ -30,4 +30,4 @@
 
 ## Test Results
 
-<img src="TestResults.png" height="500" width="500">
+<img src="TestResults.png" height="500" width="900">
