@@ -30,4 +30,4 @@
 
 ## Test Results
 
-<img src="https://github.com/MohamadAlturky/CustomerUnit-IntegrationTest/main/TestResults.jpg" height="300">
+<img src="https://github.com/MohamadAlturky/CustomerUnit-IntegrationTest/blob/main/TestResults.jpg" height="500" width="500">
