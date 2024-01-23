@@ -1,0 +1,11 @@
+C:\Users\mohamad\source\repos\CustomersManagement\CustomersManagement.Application\bin\Debug\net7.0\CustomersManagement.Application.deps.json
+C:\Users\mohamad\source\repos\CustomersManagement\CustomersManagement.Application\bin\Debug\net7.0\CustomersManagement.Application.dll
+C:\Users\mohamad\source\repos\CustomersManagement\CustomersManagement.Application\bin\Debug\net7.0\CustomersManagement.Application.pdb
+C:\Users\mohamad\source\repos\CustomersManagement\CustomersManagement.Application\obj\Debug\net7.0\CustomersManagement.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mohamad\source\repos\CustomersManagement\CustomersManagement.Application\obj\Debug\net7.0\CustomersManagement.Application.AssemblyInfoInputs.cache
+C:\Users\mohamad\source\repos\CustomersManagement\CustomersManagement.Application\obj\Debug\net7.0\CustomersManagement.Application.AssemblyInfo.cs
+C:\Users\mohamad\source\repos\CustomersManagement\CustomersManagement.Application\obj\Debug\net7.0\CustomersManagement.Application.csproj.CoreCompileInputs.cache
+C:\Users\mohamad\source\repos\CustomersManagement\CustomersManagement.Application\obj\Debug\net7.0\CustomersManagement.Application.dll
+C:\Users\mohamad\source\repos\CustomersManagement\CustomersManagement.Application\obj\Debug\net7.0\refint\CustomersManagement.Application.dll
+C:\Users\mohamad\source\repos\CustomersManagement\CustomersManagement.Application\obj\Debug\net7.0\CustomersManagement.Application.pdb
+C:\Users\mohamad\source\repos\CustomersManagement\CustomersManagement.Application\obj\Debug\net7.0\ref\CustomersManagement.Application.dll
