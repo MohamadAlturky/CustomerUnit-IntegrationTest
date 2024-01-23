@@ -27,3 +27,7 @@
 ### &nbsp;&nbsp;&nbsp;&nbsp; CustomersManagement.PresentationIntegrationTests
 
 > Contains the integration tests for the /customers endpoint
+
+## Test Results
+
+<img src="https://github.com/MohamadAlturky/CustomerUnit-IntegrationTest/main/TestResults.jpg" height="300">
