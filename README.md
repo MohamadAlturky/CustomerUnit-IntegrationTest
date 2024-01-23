@@ -1,29 +1,29 @@
 # CustomersManagement API
 
-## Source Code
+## &nbsp;&nbsp; Source Code
 
-### CustomersManagement.Presentation
+### &nbsp;&nbsp;&nbsp;&nbsp; CustomersManagement.Presentation
 
 > Contains the web api project
 
-### CustomersManagement.Application
+### &nbsp;&nbsp;&nbsp;&nbsp; CustomersManagement.Application
 
 > Contains the business logic and the customers entity
 
-### CustomersManagement.Infrastructure
+### &nbsp;&nbsp;&nbsp;&nbsp; CustomersManagement.Infrastructure
 
 > Contains the database implementation using entity framework core
 
-## Tests
+## &nbsp;&nbsp; Tests
 
-### CustomersManagement.CustomersServiceUnitTestWithMoqing
+### &nbsp;&nbsp;&nbsp;&nbsp; CustomersManagement.CustomersServiceUnitTestWithMoqing
 
 > Contains the unit tests for the customer service without using a real database with moq techniques
 
-### CustomersManagement.DatabaseIntegrationTests
+### &nbsp;&nbsp;&nbsp;&nbsp; CustomersManagement.DatabaseIntegrationTests
 
 > Contains the integration tests for the connection with the sql server database
 
-### CustomersManagement.PresentationIntegrationTests
+### &nbsp;&nbsp;&nbsp;&nbsp; CustomersManagement.PresentationIntegrationTests
 
 > Contains the integration tests for the /customers endpoint
