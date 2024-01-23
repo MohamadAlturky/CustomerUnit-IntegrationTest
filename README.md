@@ -4,26 +4,26 @@
 
 ### &nbsp;&nbsp;&nbsp;&nbsp; CustomersManagement.Presentation
 
-&nbsp;&nbsp;&nbsp;&nbsp; > Contains the web api project
+> Contains the web api project
 
 ### &nbsp;&nbsp;&nbsp;&nbsp; CustomersManagement.Application
 
-&nbsp;&nbsp;&nbsp;&nbsp; > Contains the business logic and the customers entity
+> Contains the business logic and the customers entity
 
 ### &nbsp;&nbsp;&nbsp;&nbsp; CustomersManagement.Infrastructure
 
-&nbsp;&nbsp;&nbsp;&nbsp; > Contains the database implementation using entity framework core
+> Contains the database implementation using entity framework core
 
 ## &nbsp;&nbsp; Tests
 
 ### &nbsp;&nbsp;&nbsp;&nbsp; CustomersManagement.CustomersServiceUnitTestWithMoqing
 
-&nbsp;&nbsp;&nbsp;&nbsp; > Contains the unit tests for the customer service without using a real database with moq techniques
+> Contains the unit tests for the customer service without using a real database with moq techniques
 
 ### &nbsp;&nbsp;&nbsp;&nbsp; CustomersManagement.DatabaseIntegrationTests
 
-&nbsp;&nbsp;&nbsp;&nbsp; > Contains the integration tests for the connection with the sql server database
+> Contains the integration tests for the connection with the sql server database
 
 ### &nbsp;&nbsp;&nbsp;&nbsp; CustomersManagement.PresentationIntegrationTests
 
-&nbsp;&nbsp;&nbsp;&nbsp; > Contains the integration tests for the /customers endpoint
+> Contains the integration tests for the /customers endpoint
