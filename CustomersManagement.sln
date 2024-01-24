@@ -3,21 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomersManagement.Presentation", "CustomersManagement.Presentation\CustomersManagement.Presentation.csproj", "{70691F53-88C5-4F85-8C24-860D18C8967D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomersManagement.Presentation", "CustomersManagement.Presentation\CustomersManagement.Presentation.csproj", "{70691F53-88C5-4F85-8C24-860D18C8967D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source Code", "Source Code", "{7EC6449E-6C29-431C-83B1-7E4A74C89673}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomersManagement.Application", "CustomersManagement.Application\CustomersManagement.Application.csproj", "{D51C020E-E7A4-4CEB-A842-C3FC826A3316}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomersManagement.Application", "CustomersManagement.Application\CustomersManagement.Application.csproj", "{D51C020E-E7A4-4CEB-A842-C3FC826A3316}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomersManagement.Infrastructure", "CustomersManagement.Infrastructure\CustomersManagement.Infrastructure.csproj", "{8D37D118-9146-4D74-9ACB-444CCF675B89}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomersManagement.Infrastructure", "CustomersManagement.Infrastructure\CustomersManagement.Infrastructure.csproj", "{8D37D118-9146-4D74-9ACB-444CCF675B89}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{62F00A9D-33C0-4905-B8F8-5A85F33C3462}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomersManagement.PresentationIntegrationTests", "CustomersManagement.PresentationIntegrationTests\CustomersManagement.PresentationIntegrationTests.csproj", "{B42B2085-8EF9-4CDE-A139-00F82927FC8E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomersManagement.PresentationIntegrationTests", "CustomersManagement.PresentationIntegrationTests\CustomersManagement.PresentationIntegrationTests.csproj", "{B42B2085-8EF9-4CDE-A139-00F82927FC8E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomersManagement.DatabaseIntegrationTests", "CustomersManagement.DatabaseIntegrationTests\CustomersManagement.DatabaseIntegrationTests.csproj", "{39F99003-3BA9-4B5C-8E9C-1904B7057776}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomersManagement.DatabaseIntegrationTests", "CustomersManagement.DatabaseIntegrationTests\CustomersManagement.DatabaseIntegrationTests.csproj", "{39F99003-3BA9-4B5C-8E9C-1904B7057776}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomersManagement.CustomersServiceUnitTestWithMoqing", "CustomersManagement.CustomersServiceUnitTestWithMoqing\CustomersManagement.CustomersServiceUnitTestWithMoqing.csproj", "{D057BED6-FCA4-402E-9644-01ACD2A91995}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomersManagement.CustomersServiceUnitTestWithMoqing", "CustomersManagement.CustomersServiceUnitTestWithMoqing\CustomersManagement.CustomersServiceUnitTestWithMoqing.csproj", "{D057BED6-FCA4-402E-9644-01ACD2A91995}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomersManagement.FrontEndTest", "CustomersManagement.FrontEndTest\CustomersManagement.FrontEndTest.csproj", "{9A2D658F-A78E-4A62-9463-AC7EBAD1623F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +51,10 @@ Global
 		{D057BED6-FCA4-402E-9644-01ACD2A91995}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D057BED6-FCA4-402E-9644-01ACD2A91995}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D057BED6-FCA4-402E-9644-01ACD2A91995}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A2D658F-A78E-4A62-9463-AC7EBAD1623F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A2D658F-A78E-4A62-9463-AC7EBAD1623F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A2D658F-A78E-4A62-9463-AC7EBAD1623F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A2D658F-A78E-4A62-9463-AC7EBAD1623F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,6 +66,7 @@ Global
 		{B42B2085-8EF9-4CDE-A139-00F82927FC8E} = {62F00A9D-33C0-4905-B8F8-5A85F33C3462}
 		{39F99003-3BA9-4B5C-8E9C-1904B7057776} = {62F00A9D-33C0-4905-B8F8-5A85F33C3462}
 		{D057BED6-FCA4-402E-9644-01ACD2A91995} = {62F00A9D-33C0-4905-B8F8-5A85F33C3462}
+		{9A2D658F-A78E-4A62-9463-AC7EBAD1623F} = {62F00A9D-33C0-4905-B8F8-5A85F33C3462}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {258A72B6-E05D-4B6B-AD14-7BB4A9394D1B}
