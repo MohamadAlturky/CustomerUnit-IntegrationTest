@@ -50,4 +50,68 @@ public class CustomerServiceTests
         }
 
     }
+
+    [Test]
+    public void GetCustomers_ShouldReturnAnEmptyListOfCustomers_WhenAllIsDeleted()
+    {
+        Mock<IEntityRepository<Customer>> mock = new Mock<IEntityRepository<Customer>>();
+
+        _customers = new List<Customer>
+        {
+            new Customer()
+            {
+                CustomerId = "Hi",
+                FirstName = "Mohamad",
+                LastName = "Alturky",
+                Id = 4,
+                IsDeleted = true
+            }
+        };
+        IQueryable<Customer> queryable = _customers.AsQueryable();
+        mock.Setup(repo => repo.GetAllQueryable()).Returns(queryable);
+
+
+        CustomerService service = new CustomerService(mock.Object);
+
+        List<Customer> customers = service.GetCustomers();
+
+        Assert.That(customers, !Is.EqualTo(null));
+        Assert.That(customers.Count, Is.EqualTo(0));
+    }
+
+    [Test]
+    public void InsertCustomer_SouldReturnTrue_WhenCallingItWithCustomerObject()
+    {
+        Mock<IEntityRepository<Customer>> mock = new Mock<IEntityRepository<Customer>>();
+        Customer customer = new Customer()
+        {
+
+        };
+
+        mock.Setup(r => r.Insert(customer));
+        CustomerService service = new CustomerService(mock.Object);
+
+        bool status = service.insertCustomer(customer);
+
+        Assert.That(status, Is.EqualTo(true));
+        mock.Verify(r => r.Insert(customer), Times.Once);
+
+    }
+
+    [Test]
+    public void InsertCustomer_SouldReturnFalse_WhenExceptionOccured()
+    {
+        Mock<IEntityRepository<Customer>> mock = new Mock<IEntityRepository<Customer>>();
+        Customer customer = new Customer()
+        {
+
+        };
+
+        mock.Setup(r => r.Insert(customer)).Throws(new InvalidOperationException("Insert failed")); ;
+        CustomerService service = new CustomerService(mock.Object);
+
+        bool status = service.insertCustomer(customer);
+
+        Assert.That(status, Is.EqualTo(false));
+    }
 }
