@@ -1,7 +1,10 @@
-﻿using CustomersManagement.Application.Models;
+﻿using System.Net.Http;
+using System.Text.Json;
+using CustomersManagement.Application.Models;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Newtonsoft.Json;
 using System.Reflection;
+using CustomersManagement.Presentation.ApiModels;
 
 namespace CustomersManagement.PresentationIntegrationTests;
 
@@ -45,5 +48,32 @@ public class CustomersEndPointsTests
                 return reader.ReadToEnd();
             }
         }
+    }
+
+    [Test]
+    public async Task InsertCustomerEndPoint_ShouldReturnTrue_WhenCallItWithACustomer()
+    {
+        WebApplicationFactory<Presentation.Program> factory = new WebApplicationFactory<CustomersManagement.Presentation.Program>().WithWebHostBuilder(builder => { });
+        HttpClient client = factory.CreateClient();
+
+
+        var data = new CreateCustomerRequest()
+        {
+            CustomerId = "98",
+            FirstName = "Mohamad",
+            LastName = "Alturky"
+        };
+
+        var json = System.Text.Json.JsonSerializer.Serialize(data);
+
+        var content = new StringContent(json, System.Text.Encoding.UTF8, "application/json");
+
+        var response = await client.PostAsync("/createCustomer", content);
+
+        var responseString = await response.Content.ReadAsStringAsync();
+
+        bool status = Boolean.Parse(responseString);
+        
+        Assert.That(status, Is.EqualTo(true));
     }
 }
